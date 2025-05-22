@@ -34,12 +34,14 @@
             this.txtDueDate = new System.Windows.Forms.TextBox();
             this.lblDueDate = new System.Windows.Forms.Label();
             this.listBoxTasks = new System.Windows.Forms.ListBox();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(111, 131);
+            this.button1.Location = new System.Drawing.Point(94, 232);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(85, 43);
             this.button1.TabIndex = 0;
@@ -93,11 +95,35 @@
             this.listBoxTasks.Size = new System.Drawing.Size(250, 124);
             this.listBoxTasks.TabIndex = 3;
             // 
+            // button2
+            // 
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(185, 232);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(85, 43);
+            this.button2.TabIndex = 4;
+            this.button2.Text = "Clear";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.Button2_Click);
+            // 
+            // button3
+            // 
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.Location = new System.Drawing.Point(276, 232);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(85, 43);
+            this.button3.TabIndex = 5;
+            this.button3.Text = "Delete";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.Button3_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(518, 218);
+            this.ClientSize = new System.Drawing.Size(518, 335);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.listBoxTasks);
             this.Controls.Add(this.lblDueDate);
             this.Controls.Add(this.lblTask);
@@ -119,6 +145,8 @@
         private System.Windows.Forms.TextBox txtDueDate;
         private System.Windows.Forms.Label lblDueDate;
         private System.Windows.Forms.ListBox listBoxTasks;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
     }
 }
 
